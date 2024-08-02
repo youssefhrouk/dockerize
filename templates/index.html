@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <title>Ascii-Art-Web</title>
+</head>
+<body>  
+    <h1 onclick="reloadPage()">Ascii Art Web</h1>
+    <form method="post" action="/ascii-art">
+        <label for="txt" class="label">Enter your text here:</label>
+        <br>
+        <textarea class="textarea" placeholder="Type something here.." id="txt" name="input" maxlength="1000" required></textarea>
+        <p>1000 characters allowed</p>
+        <br>
+        <label for="banner" class="label">Select Banner:</label>
+        <select class="select" id="banner" name="banner" required>
+            <option value="standard">Standard</option>
+            <option value="shadow">Shadow</option>
+            <option value="thinkertoy">Thinkertoy</option>
+        </select>
+        <input class="button" type="submit">
+    </form>
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
