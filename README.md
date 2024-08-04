@@ -1,4 +1,4 @@
-# ascii-art-web-stylize
+# dockerize
 
 ## Objectives
 The goal of this project is to enhance the original Ascii-Art-Web by making the site:
